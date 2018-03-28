@@ -1,0 +1,325 @@
+/* @override http://localhost/~michaeldaleo/webapp/trunk/VIEW/styles.css */
+
+/* @override http://localhost:8888/webapp/trunk/VIEW/styles.css */
+
+/* 960 reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+/* Default restore */
+body{font:13px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif}a:focus{outline:1px dotted invert}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}h1{font-size:25px}h2{font-size:20px}h3{font-size:18px}ol{list-style:decimal}ul{list-style:square}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}
+
+/* Structure Defaults */
+.width_980{
+	width: 980px;
+}
+.width_760{
+	width: 760px;
+}
+.center{
+	position: relative;
+	margin:0 auto;
+
+}
+
+p{
+	color: #4a565f;
+	font: 1.2em/1.4em Georgia, "Times New Roman", Times, serif;
+}
+
+fieldset{margin:0}
+
+/*Main styles*/
+
+html{
+	background: white url(images/bg.png) center top;
+	
+}
+
+#login{
+	position: relative;
+	background-color: rgba(0,0,0,0.45);
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #abb2b9;
+	margin-bottom: 5px;
+}
+
+#login:after{
+	height: 6px;
+	width: 100%;
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #3d3f42;
+}
+
+#login form{
+	position:relative;
+	right: -251px;
+	width: 280px;
+}
+
+#login input{
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	border: none;
+	margin-right: 5px;
+	text-indent: 3px;
+	
+}
+
+.login-submit{
+cursor: pointer;
+}
+
+#username,#password{
+	width: 100px;
+}
+
+#logo{
+	text-indent: -9999px;
+	background-image: url(images/logo.png);
+	height: 115px;
+	width: 651px;
+}
+
+#nav-list{
+	position:relative;
+	left: 565px;
+	width: 310px;
+}
+
+#nav-list li{
+	position:relative;
+	display:inline-block;
+	list-style-type: none;
+	width: 99px;
+	height: 23px;
+	margin-left:0px;
+	z-index: 1;
+	
+}
+
+.hover-span{
+	position: absolute;
+	width: 99px;
+	height: 23px;
+	background-image: url(images/nav-anchor-over.png);
+	z-index: -1;
+	left: 0;
+}
+
+#nav-list a{
+	display:inline-block;
+	text-align:center;
+	text-decoration: none;
+	color:white;
+	width: 99px;
+	height: 23px;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+}
+
+/*
+#nav-list a:hover{
+	color:white;
+	background-image: url(images/nav-anchor-over.png);
+
+}
+*/
+
+/*=====Home==========*/
+#content-home{
+	background: url(images/edges.png) no-repeat center 0;
+}
+
+#home-image{
+	width: 800px;
+	height: 295px;
+	margin: 0 auto;
+	background: url(images/home-pic.png) no-repeat;
+}
+
+#h2-home{
+	background: url(images/h2-home.png) no-repeat -9px;
+	text-indent: -9999px;
+	height: 36px;
+	margin-bottom: 9px;
+	border-bottom: 2px solid rgba(125,125,125,0.5);
+}
+
+#content-home p{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+/*======Tour=============*/
+
+#h2-tour{
+	background: url(images/h2-tour.png) no-repeat -9px;
+	text-indent: -9999px;
+	height: 36px;
+	margin-bottom: 9px;
+	border-bottom: 2px solid rgba(125,125,125,0.5);
+}
+
+#tour-table{
+	width: 760px;
+	background-color: #e3f2fa;
+}
+
+#tour-table thead td:first-child {
+	border-radius:10px 0px 0px 0px;
+	-moz-border-radius:10px 0px 0px 0px;
+	padding-left:5px;
+
+}
+
+#tour-table thead td:last-child {
+	border-radius:0px 10px 0px 0px;
+	-moz-border-radius:0px 10px 0px 0px;
+}
+
+
+#tour-table tr td{
+	padding: 1px;
+	text-align: left;
+	direction: ltr;
+}
+
+#tour-table tbody tr:nth-child(2n+2){
+	background-color: #b0d6e9;
+}
+
+#content-admin #tour-table .updateBtn{
+	background: #c4fff4;
+	border-radius:5px 5px 5px 5px;
+	border: 1px solid black;
+	-moz-border-radius:5px 5px 5px 5px;
+}
+
+#content-admin #tour-table .updateBtn:hover{
+	background: #fa484b;
+	color: white;
+}
+
+
+#tour-table thead{
+	font-size: 1.4em;
+	background-color: #85939b;
+	border: none;
+}
+
+/*===============================*/
+
+#h2-contact{
+	background: url(images/h2-contact.png) no-repeat -9px;
+	text-indent: -9999px;
+	height: 36px;
+	margin-bottom: 9px;
+	border-bottom: 2px solid rgba(125,125,125,0.5);
+}
+
+#content-contact form{
+	position:relative;
+
+}
+
+#content-contact label{
+	font-size: 1.2em;
+}
+
+#content-contact input{
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	border: 2px solid gray;
+	margin-bottom: 15px;
+	
+}
+
+.input-text{
+	width: 250px;
+	height: 20px;
+	font-size: 1.1em;
+	text-indent: 5px;
+}
+
+#message{
+	width: 400px;
+	height: 100px;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	border: 2px solid gray;
+	margin-bottom: 15px;
+
+}
+
+#submit{cursor: pointer}
+
+.validation-error{
+	background-color: rgba(255,187,202,0.5);
+	border: 1px solid red;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	padding: 5px;
+	color:red;
+	font-family: Georgia;
+}
+
+
+
+#validation-error ul, .validation-error ul{
+	font-weight: bold;
+	color: red;
+}
+#content-contact input.valid-error{
+	border: 1px solid red;
+	background-color: rgba(255,187,202,0.5);
+}
+
+.send-success{
+	background-color: rgba(187,255,224,0.5);
+	border: 1px solid green;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	padding: 5px;
+	color:green;
+	font-family: Georgia;
+}
+
+/*Admin panel*/
+#h2-admin{
+	background: url(images/h2-admin.png) no-repeat -9px;
+	text-indent: -9999px;
+	height: 36px;
+	margin-bottom: 9px;
+	border-bottom: 2px solid rgba(125,125,125,0.5);
+}
+
+#content-admin table input{
+	white-space: normal;
+}
+
+.td-hover:hover{
+	background-color: #88a3d3;
+
+}
+
+
+#content-admin input{
+	border:none;
+	background: none;
+}
+#content-admin input:focus{
+	border: 1px solid green;
+	background: #e8ffd8;
+}
+
+
+.citystate{
+	font: .85em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
